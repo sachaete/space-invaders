@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Space Invaders</title>
+<style>
+#bottone {
+background:red;
+position: absolute;
+top: 200px;
+left:10px;
+}
+</style>
+<button id="su">SU</button> <br> <br> <br><br>
+<button id="sinistra">SX</button>
+<button id="destra">DX</button><br><br><br>
+<button id="giu">GIU'</button> <br> <br> <br> <br>
+<button id="bottone">navicella</button> 
+
+
+</head>
+<body>
+
+
+</body>
+<script>
+var sopra = document.getElementById("su");
+var destra = document.getElementById("destra");
+var sinistra = document.getElementById("sinistra");
+var sotto = document.getElementById("giu");
+var bottone = document.getElementById("bottone");
+var onDestraClick = function() {
+bottone.style.left = (parseFloat(bottone.style.left)+1)+"px";
+}
+bottone.addEventListener("click", onDestraClick);
+</script>
+</html>
